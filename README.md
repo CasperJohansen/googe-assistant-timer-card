@@ -16,7 +16,7 @@ Once installed, click on "configure" and change update interval to 30 seconds
 
 [HACS](https://hacs.xyz/) Install:
 
-To install this:
+    To install this:
     -> goto HACS(tab) 
     -> click Frontend 
     -> click 3 dots in the right corner 
@@ -28,7 +28,7 @@ To install this:
     -> search for 'Google Assistant Timer Card'
     -> Download it
 
-To use this:
+    To use this:
     -> add manual card
     -> paste:
         type: custom:ga-timer-card
