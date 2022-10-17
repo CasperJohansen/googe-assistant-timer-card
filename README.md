@@ -8,7 +8,8 @@ Note: i cant get it to update every second - it updates at random, but acceptabl
 
 Note2: If no timer is set, the card will be very thin as to not disturb your layout.
 
-(HACS Install):
+HACS Install:
+
     Before you install this:
     Download and setup Google Home Integration (https://github.com/leikoilja/ha-google-home#sensors) 
     You can find it in the default HACS repo. Just search Google Home.
