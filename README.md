@@ -1,6 +1,7 @@
 # googe-assistant-timer-card
 
-Custom card for Home Assistant.
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
+
 
 Shows current timers set on google home devices
 
@@ -8,10 +9,10 @@ Note: i cant get it to update every second - it updates at random, but acceptabl
 
 Note2: If no timer is set, the card will be very thin as to not disturb your layout.
 
-HACS Install:
+[HACS](https://hacs.xyz/) Install:
 
     Before you install this:
-    Download and setup Google Home Integration (https://github.com/leikoilja/ha-google-home#sensors) 
+    Download and setup [Google Home Integration](https://github.com/leikoilja/ha-google-home#sensors) 
     You can find it in the default HACS repo. Just search Google Home.
     Once installed, click on "configure" and change update interval to 30 seconds
 
