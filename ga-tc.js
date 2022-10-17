@@ -27,7 +27,6 @@ class GoogleAssistantTimerCard extends HTMLElement {
             throw new Error("Invalid date. Ensure its a ISO Date")
         }
 
-        console.log(state);
         console.log(stateStr);
         console.log(_timer);
     }
