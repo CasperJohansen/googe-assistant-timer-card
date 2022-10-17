@@ -13,21 +13,18 @@ class GoogleAssistantTimerCard extends HTMLElement {
         const config = this.config;
         const entityId = config.entity;
 
+
         if(entityId){
             const state = hass.states[entityId];
             const stateStr = state ? state.state : "Unavailable";
+            console.log(stateStr);
+            console.log(state);
             if (stateStr == "Unavailable") {
                 //no timer set
             } else {
                 var _timer = new Date(stateStr);
             }
         }
-
-        if (_timer == "Invalid Date") {
-            throw new Error("Invalid date. Ensure its a ISO Date")
-        }
-
-        console.log(stateStr);
         console.log(_timer);
     }
     setConfig(config) {
