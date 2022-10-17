@@ -9,14 +9,14 @@ Note: i cant get it to update every second - it updates at random, but acceptabl
 
 Note2: If no timer is set, the card will be very thin as to not disturb your layout.
 
+Before you install this:
+Download and setup [Google Home Integration](https://github.com/leikoilja/ha-google-home#sensors)
+You can find it in the default HACS repo. Just search Google Home.
+Once installed, click on "configure" and change update interval to 30 seconds
+
 [HACS](https://hacs.xyz/) Install:
 
-    Before you install this:
-    Download and setup [Google Home Integration](https://github.com/leikoilja/ha-google-home#sensors) 
-    You can find it in the default HACS repo. Just search Google Home.
-    Once installed, click on "configure" and change update interval to 30 seconds
-
-    To install this:
+To install this:
     -> goto HACS(tab) 
     -> click Frontend 
     -> click 3 dots in the right corner 
@@ -28,7 +28,7 @@ Note2: If no timer is set, the card will be very thin as to not disturb your lay
     -> search for 'Google Assistant Timer Card'
     -> Download it
 
-    To use this:
+To use this:
     -> add manual card
     -> paste:
         type: custom:ga-timer-card
