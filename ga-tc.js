@@ -25,7 +25,7 @@ class GoogleAssistantTimerCard extends HTMLElement {
                     var _timer = new Date(stateStr);
                 }
         }
-
+        //trick
         console.log(_timer);
     }
     setConfig(config) {
