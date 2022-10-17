@@ -15,15 +15,16 @@ class GoogleAssistantTimerCard extends HTMLElement {
 
         if(entityId){
             const state = hass.states[entityId];
-            console.log(state.attributes.timers);
-            var stateStr = state ? state.state : "Unavailable";
+            const timers = state.attributes.timers;
+            for (const timer of timers) {
                 if (stateStr == "Unavailable") {
                     //no timer set
                 } else {
-                    var _timer = new Date(stateStr);
+                    var _timers = [new Date(stateStr)];
                 }
+            }
         }
-        console.log(_timer);
+        console.log(_timers);
     }
     setConfig(config) {
         const root = this.shadowRoot;
