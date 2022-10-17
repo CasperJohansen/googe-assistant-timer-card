@@ -17,8 +17,6 @@ class GoogleAssistantTimerCard extends HTMLElement {
         if(entityId){
             const state = hass.states[entityId];
             const stateStr = state ? state.state : "Unavailable";
-            console.log(stateStr);
-            console.log(state);
             if (stateStr == "Unavailable") {
                 //no timer set
             } else {
