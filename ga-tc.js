@@ -21,8 +21,7 @@ class GoogleAssistantTimerCard extends HTMLElement {
                     if (timer == "Unavailable") {
                         console.log("Timer unavalible");
                     } else {
-                        console.log(timer);
-                        var _timers = [new Date(timer)];
+                        var _timers = [new Date(timer.local_time)];
                     }
                 }
             }
@@ -109,5 +108,4 @@ class GoogleAssistantTimerCard extends HTMLElement {
 customElements.define('ga-timer-card', GoogleAssistantTimerCard);
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
