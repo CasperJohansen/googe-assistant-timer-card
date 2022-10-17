@@ -31,3 +31,5 @@ class GoogleAssistantTimerCard extends HTMLElement {
         console.log(stateStr);
     }
 }
+
+customElements.define('ga-timer-card', GoogleAssistantTimerCard);
