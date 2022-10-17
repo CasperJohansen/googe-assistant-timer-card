@@ -16,11 +16,14 @@ class GoogleAssistantTimerCard extends HTMLElement {
         if(entityId){
             const state = hass.states[entityId];
             const timers = state.attributes.timers;
-            for (const timer of timers) {
-                if (timer == "Unavailable") {
-                    //no timer set
-                } else {
-                    var _timers = [new Date(timer)];
+            if(timers != "undefined"){
+                for (const timer of timers) {
+                    if (timer == "Unavailable") {
+                        console.log("Timer unavalible");
+                    } else {
+                        console.log(timer);
+                        var _timers = [new Date(timer)];
+                    }
                 }
             }
         }
@@ -106,4 +109,5 @@ class GoogleAssistantTimerCard extends HTMLElement {
 customElements.define('ga-timer-card', GoogleAssistantTimerCard);
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
